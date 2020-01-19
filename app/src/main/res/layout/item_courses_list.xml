@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools" android:layout_height="170dp" android:layout_width="170dp">
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" app:cardCornerRadius="10dp" app:contentPadding="16dp"
+            app:cardElevation="4dp" app:cardUseCompatPadding="true" app:cardPreventCornerOverlap="true">
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" app:srcCompat="@drawable/ic_collections_black_24dp"
+                    android:id="@+id/imageView2"
+                    app:layout_constraintEnd_toEndOf="@+id/textCourse"
+                    app:layout_constraintStart_toStartOf="@+id/textCourse"
+                    android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/textCourse"/>
+            <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textCourse"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="8dp" android:layout_marginStart="8dp" android:textColor="@color/itcenter"
+                    android:textStyle="bold" android:textSize="@dimen/course_name_size"
+                    android:textAppearance="@style/BrandedText.CourseName"
+                    android:textAlignment="center"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>
